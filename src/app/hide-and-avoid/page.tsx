@@ -66,9 +66,9 @@ function getSeekersResults(seekers: any, hiders: any) {
         let hiderPoints = 0
         for (let j = 1; j <= 4; j++) {
             if (seekerDict[j] === true) {
-                seekerPoints += parseInt(hiderDict[j]) * j
-            } else {
                 hiderPoints += parseInt(hiderDict[j]) * j
+            } else {
+                seekerPoints += parseInt(hiderDict[j]) * j
             }
         }
         seekersResults.push({
